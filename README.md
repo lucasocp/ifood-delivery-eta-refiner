@@ -105,4 +105,3 @@ Acesse `http://localhost:8003/docs` para testar os endpoints via Swagger.
 **Lucas Oliveira Costa Pinto**  
 - **LinkedIn:** [linkedin.com/in/lucas-oliveira-costa-pinto](https://www.linkedin.com/in/lucas-oliveira-costa-pinto/)  
 - **GitHub:** [github.com/lucasocp](https://github.com/lucasocp)  
-- **Curso:** Engenharia de Software – UCSal (Formação prevista: Dez/2028)
