@@ -24,25 +24,26 @@ Modelos estatísticos tradicionais de ETA falham em prever anomalias pontuais: t
 ```mermaid
 flowchart TD
     subgraph DataEngineering ["1. Camada de Engenharia de Dados (Batch/Near-Real-Time)"]
-        A[Telemetria Histórica de Restaurantes] --> C[Feature Store / Databricks]
-        B[Distância Geodésica & Tráfego] --> C
-        C --> D[PySpark Pipeline: Cálculo de Baseline ETA]
+        A["Telemetria Histórica de Restaurantes"] --> C["Feature Store / Databricks"]
+        B["Distância Geodésica & Tráfego"] --> C
+        C --> D["PySpark Pipeline: Cálculo de Baseline ETA"]
     end
 
     subgraph LLMLayer ["2. Camada de IA & Sinais Não-Estruturados"]
-        E[Chat / Notas de Voz de Entregadores] --> H[LLMSignalRefiner]
-        F[Alertas de Sobrecarga de Cozinha] --> H
-        G[Relatórios Climáticos da Defesa Civil] --> H
-        H -->|Extração de Deltas & Severidade| I[Variação Estocástica de Tempo (Delta Minutos)]
+        E["Chat / Notas de Voz de Entregadores"] --> H["LLMSignalRefiner"]
+        F["Alertas de Sobrecarga de Cozinha"] --> H
+        G["Relatórios Climáticos da Defesa Civil"] --> H
+        H -->|"Extração de Deltas & Severidade"| I["Variação Estocástica de Tempo (Delta Minutos)"]
     end
 
     subgraph HybridFusion ["3. Motor de Fusão & Comunicação"]
-        D --> J[HybridETAEngine]
+        D --> J["HybridETAEngine"]
         I --> J
-        J --> K[Previsão Final de ETA Refinada]
-        J --> L[Mensagem Empática Gerada para o App iFood]
+        J --> K["Previsão Final de ETA Refinada"]
+        J --> L["Mensagem Empática Gerada para o App iFood"]
     end
 ```
+
 
 ---
 
