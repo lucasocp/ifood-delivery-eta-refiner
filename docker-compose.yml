@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  delivery-eta-refiner-api:
+    build: .
+    container_name: ifood_delivery_eta_refiner
+    ports:
+      - "8003:8000"
+    environment:
+      - ENVIRONMENT=production
+    restart: unless-stopped
